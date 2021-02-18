@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <script src="fontawesome/js/all.js"></script>
+  <script src="fontawesome/metadata/icons.json"></script>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jamsanz</title>
+    <style>
+    .se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(img/Preloader_3.gif) center no-repeat #fff;
+}
+.tabs .indicator{
+      background: #F88F01;
+    }
+    </style>
+</head>
+<body>
+    <div class="main container">
+        <div class="card center z-depth-3">
+            <div class="card-header header-head">
+                <img src="img/1.jpg" alt="">
+            </div>
+            <div class="card-content header-body">
+                <h5>SANI <span style="font-weight: 600;">MUHAMMAD</span> JAMIL</h5>
+                <div class="card-text">
+                    <p>Full Stack Developer</p>
+                </div>
+            </div>
+            <div class="card-action transparent header-footer">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fas fa-envelope"></i></a></li>
+                   <!-- <li><a href=""><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href=""><i class="fab fa-snapchat"></i></a></li>
+                    <li><a href=""><i class="fas fa-phone"></i></a></li>-->
+                   
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-title center">
+                <div class="s12 l6 offset-l2">
+                    <ul class="tabs center" style="border-radius:20px 20px ;">
+                        <li class="tab col l6 s6"><a href="#about" class="btn transparent z-depth-0 waves-effect black-text active">About Me</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+            <hr>
+            <div class="card-content col s12" id="about">
+                <p>I'm a very dedicated and passionate programmer with so much aspiriation and innovation for the future.
+                    I specialize in web development with a wide variety of modern language technologies and experience.
+                    I'm confident and conversant in many programming languages ranging from basic Markup languages (HTML, XML) to vast backend language like Nodejs, Php ... and more. I speak a total of - programming languages, frameworks and libaries which are listed below. <br>
+                    <ul>
+                    <li>HTML,</li>
+                    <li>CSS,</li>
+                    <li>Javascript,</li>
+                    <li>C++,</li>
+                    <li>Node js,</li>
+                    <li>PHP,</li>
+                    <li>MySQL,</li>
+                    <li>C,</li>
+                    <li>jQuery,</li>
+                    <li>NoSQL,</li>
+                    <li>React js,</li>
+                    <li>Visual Basic,</li>
+                    <li>Bootstrap,</li>
+                    <li>Materialize Css<./li>
+                </ul>
+                </p>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+
+
+<div class="se-pre-con"></div>
+
+<script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+  <script>
+      $(".se-pre-con").delay(1500).fadeOut("slow");
+      $(document).ready(()=>{
+        $('.tabs').tabs();
+      });
+      </script>
+</body>
+</html>
