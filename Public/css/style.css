@@ -17,8 +17,8 @@ body{
 .header-head>img{
     height: 250px;
     width: 250px;
+    /* transform: rotate(-45deg); */
     border-radius: 50%;
-    transform: rotate(-45deg);
     position:relative !important;
     top: -125px !important;
 }
@@ -56,7 +56,7 @@ ul>li{
         height: 100px;
         width: 100px;
         border-radius: 50%;
-        transform: rotate(-45deg);
+        /* transform: rotate(-45deg); */
         position:relative !important;
         top: -50px !important;
     }

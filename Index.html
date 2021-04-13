@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/materialize.min.css">
   <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/jamsanz.ico">
     <title>Jamsanz</title>
     <style>
     .se-pre-con {
@@ -26,13 +27,19 @@
 .tabs .indicator{
       background: #F88F01;
     }
+    .img{
+        /* position: relative !important; */
+        top: 20px !important;
+        width:100% !important;
+        height: 100% !important;
+    }
     </style>
 </head>
 <body>
     <div class="main container">
         <div class="card center z-depth-3">
             <div class="card-header header-head">
-                <img src="img/1.jpg" alt="">
+                <img src="img/profile-img.jpg" alt="">
             </div>
             <div class="card-content header-body">
                 <h5>SANI <span style="font-weight: 600;">MUHAMMAD</span> JAMIL</h5>
@@ -60,6 +67,7 @@
                 <div class="s12 l6 offset-l2">
                     <ul class="tabs center" style="border-radius:20px 20px ;">
                         <li class="tab col l6 s6"><a href="#about" class="btn transparent z-depth-0 waves-effect black-text active">About Me</a></li>
+                        <li class="tab col l6 s6"><a href="#projects" class="btn transparent z-depth-0 waves-effect black-text active">Portfolio</a></li>
                         
                     </ul>
                 </div>
@@ -69,7 +77,7 @@
             <div class="card-content col s12" id="about">
                 <p>I'm a very dedicated and passionate programmer with so much aspiriation and innovation for the future.
                     I specialize in web development with a wide variety of modern language technologies and experience.
-                    I'm confident and conversant in many programming languages ranging from basic Markup languages (HTML, XML) to vast backend language like Nodejs, Php ... and more. I speak a total of - programming languages, frameworks and libaries which are listed below. <br>
+                    I'm confident and conversant in many programming languages ranging from basic Markup languages (HTML, XML) to vast backend language like Nodejs, Php ... and more. Listed below are some of the technologies I have used: <br>
                     <ul>
                     <li>HTML,</li>
                     <li>CSS,</li>
@@ -88,21 +96,68 @@
                 </ul>
                 </p>
             </div>
+            <div class="card-content col s12" id="projects">
+                <div class="row">
+                <div class="card col l5 offset-l1">
+                    <div class="card-image">
+                        <div class="carousel carousel-slider">
+                            <a class="carousel-item" href="#"><img height="auto" class="img" src="img/caramel1.png"></a>
+                            <a class="carousel-item" href="#"><img height="auto" class="img" src="img/caramel2.png"></a>
+                            <a class="carousel-item" href="#"><img height="auto" class="img" src="img/caramel3.png"></a>
+                            <a class="carousel-item" href="#"><img height="auto" class="img" src="img/caramel4.png"></a>
+                            <a class="carousel-item" href="#"><img height="auto" class="img" src="img/caramel5.png"></a>
+                          </div>
+                      
+                    </div>
+                    <div class="card-content">
+                      <p>A profile page for Caramel desserts with an order option.  </p>
+                    </div>
+                    <div class="card-action">
+                      <a href="https://quiet-brushlands-18261.herokuapp.com">Click here to check Out</a>
+                    </div>
+                  </div>
+                <div class="card col l5 offset-l1">
+                    <div class="card-image">
+                      <img src="img/Newletter.png">
+                      <span class="card-title">Newsletter</span>
+                    </div>
+                    <div class="card-content">
+                      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias illo magnam cum error cupiditate eum soluta nam id corrupti ad veritatis totam eaque pariatur omnis voluptate amet, non earum. Quia.</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Click here to check Out</a>
+                    </div>
+                  </div>
+                <div class="card col l5 offset-l1">
+                    <div class="card-image">
+                      <img src="img/Keeper-App.png">
+                      <span class="card-title">Note Keeper</span>
+                    </div>
+                    <div class="card-content">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo alias minus ratione explicabo eveniet accusantium, sed perferendis quisquam exercitationem vel dolor modi, eaque assumenda corporis expedita sit illo rem. Ea!</p>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">Click here to check Out</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
             
         </div>
         
     </div>
-
-
-
 
 <div class="se-pre-con"></div>
 
 <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
   <script>
-      $(".se-pre-con").delay(2000).fadeOut("slow");
+      $(".se-pre-con").delay(0000).fadeOut("slow");
       $(document).ready(()=>{
+        $('.carousel').carousel({
+            fullWidth:true,
+            indicators:true
+        });
         $('.tabs').tabs();
       });
       </script>
