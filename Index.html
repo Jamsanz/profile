@@ -11,6 +11,10 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/materialize.min.css">
   <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/jamsanz.ico">
     <title>Jamsanz</title>
@@ -37,7 +41,8 @@
 </head>
 <body>
     <div class="main container">
-        <div class="card center z-depth-3">
+      <div class="row">
+        <div class="card col l4 s12 center z-depth-3">
             <div class="card-header header-head">
                 <img src="img/profile-img.jpg" alt="">
             </div>
@@ -46,11 +51,20 @@
                 <div class="card-text">
                     <p>Full Stack Developer</p>
                 </div>
+                <div style="margin-top: 10px;">
+                    <span class="chip" style="margin: 5px;">React JS</span>
+                    <span class="chip" style="margin: 5px;">Next JS</span>
+                    <span class="chip" style="margin: 5px;">Javascript</span>
+                    <span class="chip" style="margin: 5px;">Typescript</span>
+                    <span class="chip" style="margin: 5px;">Node JS</span>
+                    <span class="chip" style="margin: 5px;">MongoDB</span>
+                    <span class="chip" style="margin: 5px;">MySQL</span>
+                </div>
             </div>
             <div class="card-action transparent header-footer">
                 <ul>
                     <li><a href="https://facebook.com/jamiludeen" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/jamsanz" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <!-- <li><a href="https://twitter.com/jamsanz" target="_blank"><i class="fab fa-twitter"></i></a></li> -->
                     <li><a href="https://github.com/jamsanz" target="_blank"><i class="fab fa-github"></i></a></li>
                     <li><a href="https://instagram.com/jamsanz_" target="_blank"><i class="fab fa-instagram"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/muhammad-sani-jamil-a46abb187" target="_blank"><i class="fab fa-linkedin"></i></a></li>
@@ -62,19 +76,20 @@
                 </ul>
             </div>
         </div>
-        <div class="card">
+        <!-- <div class="col l1"></div> -->
+        <div class="card col l7 s12 card-2" style="padding: 15px;">
             <div class="card-title center">
                 <div class="s12 l6 offset-l2">
                     <ul class="tabs center" style="border-radius:20px 20px ;">
-                        <li class="tab col l6 s6"><a href="#about" class="btn transparent z-depth-0 waves-effect black-text active">About Me</a></li>
-                        <li class="tab col l6 s6"><a href="#projects" class="btn transparent z-depth-0 waves-effect black-text active">Portfolio</a></li>
-                        
+                        <li class="tab col l4 s4"><a href="#aboutme" class="btn transparent z-depth-0 waves-effect black-text active">About Me</a></li>
+                        <li class="tab col l4 s4"><a href="#resume" class="btn transparent z-depth-0 waves-effect black-text active">Resume</a></li>
+                        <li class="tab col l4 s4"><a href="#projects" class="btn transparent z-depth-0 waves-effect black-text active">Portfolio</a></li>
                     </ul>
                 </div>
                 
             </div>
             <hr>
-            <div class="card-content col s12" id="about">
+            <div class="card-content col s12" id="aboutme">
                 <p>I'm a very dedicated and passionate programmer with so much aspiriation and innovation for the future.
                     I specialize in web development with a wide variety of modern language technologies and experience.
                     I'm confident and conversant in many programming languages ranging from basic Markup languages (HTML, XML) to vast backend language like Nodejs, Php ... and more. Listed below are some of the technologies I have used: <br>
@@ -96,6 +111,72 @@
                 </ul>
                 </p>
             </div>
+            <div class="card-content col s12" id="resume">
+              <section id="resume">
+                <div class="row education">
+                  <div class="three columns header-col">
+                    <h1>
+                      <span>Education</span>
+                    </h1>
+                  </div>
+          
+                  <div class="nine columns main-col">
+                    <div class="row item">
+                      <div class="twelve columns">
+                        <div key={education.school}>
+                          <h3>Al-Qalam University Katsina - NG</h3>
+                          <p class="info">
+                            Bachelor's Degree, Computer Science <span>&bull;</span>
+                            <em class="date">July 2020</em>
+                          </p>
+                          <p>Graduated with Second Class Upper Honours</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="row work">
+                  <div class="three columns header-col">
+                    <h1>
+                      <span>Work</span>
+                    </h1>
+                  </div>
+          
+                  <div class="nine columns main-col">
+                    <div>
+                      <h3>Wootlab Innovations</h3>
+                      <p class="info">
+                        Fullstack Software Developer
+                        <span>&bull;</span> <em class="date">April 2021 - Present</em>
+                      </p>
+                      <p>Developing and maintaing full stack applications using MERN Stack technologies.</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="row skill">
+                  <div class="three columns header-col">
+                    <h1>
+                      <span>Skills</span>
+                    </h1>
+                  </div>
+          
+                  <div class="nine columns main-col">
+                    <p>My Programming Language Proficiency</p>
+          
+                    <div class="bars">
+                      <ul class="skills">
+                        <li key={skills.name}>
+                          <span style="width: 103%" class={class}></span>
+                          <em>{skills.name}</em>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
             <div class="card-content col s12" id="projects">
                 <div class="row">
                 <div class="card col l5 offset-l1">
@@ -113,7 +194,7 @@
                       <p>A profile page for Caramel desserts with an order option. The page is made with the following technologies; Front End- HTML,CSS, Materialize CSS, jQuery, Ejs. Backend- Nodejs, Mongoose.  </p>
                     </div>
                     <div class="card-action">
-                      <a target="_blank" rel="noopener noreferrer" href="https://quiet-brushlands-18261.herokuapp.com">Click here to check it Out</a>
+                      <a target="_blank" rel="noopener noreferrer" href="https://carameldesserts.herokuapp.com">Click here to check it Out</a>
                     </div>
                   </div>
                 <div class="card col l5 offset-l1">
@@ -144,15 +225,17 @@
             </div>
             
         </div>
-        
+      </div>  
     </div>
 
 <div class="se-pre-con"></div>
 
 <script src="js/jquery.js"></script>
-    <script src="js/materialize.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/waypoints.js"></script>
   <script>
-      $(".se-pre-con").delay(2000).fadeOut("slow");
+      $(".se-pre-con").delay(0000).fadeOut("slow");
       $(document).ready(()=>{
         $('.carousel').carousel({
             fullWidth:true,
